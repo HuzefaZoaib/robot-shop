@@ -1,14 +1,14 @@
 <div class="container">
   <div class="left">
     <img class="logo" src="/robot-shop/assets/images/logo.png" alt="Logo" />
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/catalog" routerLinkActive="active">Catalog</a>
+    <a routerLink="/robot-shop/home" routerLinkActive="active">Home</a>
+    <a routerLink="/robot-shop/catalog" routerLinkActive="active">Catalog</a>
     <div class="cart">
-      <a routerLink="/cart" routerLinkActive="active">Cart</a>
+      <a routerLink="/robot-shop/cart" routerLinkActive="active">Cart</a>
     </div>
   </div>
   <div class="right" *ngIf="!user">
-    <a routerLink="/sign-in" routerLinkActive="active">Sign In</a>
+    <a routerLink="/robot-shop/sign-in" routerLinkActive="active">Sign In</a>
     <a href="" class="cta">Register</a>
   </div>
   <div class="right" *ngIf="user">

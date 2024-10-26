@@ -7,12 +7,12 @@ import { SignInComponent } from './user/sign-in/sign-in.component';
 import { TemplateFormControlsComponent } from './user/template-form-controls/template-form-controls.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, title: "Home - Joe's Robot Shop" },
-  { path: 'catalog', component: CatalogComponent, title: "Catalog - Joe's Robot Shop" },
-  { path: 'cart', component: CartComponent, title: "Cart - Joe's Robot Shop" },
-  { path: 'sign-in', component: SignInComponent },
-  { path: 'form-controls', component: TemplateFormControlsComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'robot-shop/home', component: HomeComponent, title: "Home - Joe's Robot Shop" },
+  { path: 'robot-shop/catalog', component: CatalogComponent, title: "Catalog - Joe's Robot Shop" },
+  { path: 'robot-shop/cart', component: CartComponent, title: "Cart - Joe's Robot Shop" },
+  { path: 'robot-shop/sign-in', component: SignInComponent },
+  { path: 'robot-shop/form-controls', component: TemplateFormControlsComponent },
+  { path: '', redirectTo: 'robot-shop//home', pathMatch: 'full' },
 ];
 
 @NgModule({
